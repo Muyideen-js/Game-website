@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    overflow-x: hidden;
+    width: 100%;
+}
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/background.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.bg .arrow svg{
+    color: #fff;
+    padding: 30px;
+}
+
+.alignment {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(51, 0, 98);
+    box-shadow: -1px 0 10px #000;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    transition: transform .5s;
+    transform: rotateX(30deg)
+}
+
+.flex-container:hover {
+    transform: scale(1.1);
+}
+
+.one {
+    width: 800px;
+    height: 400px;
+}
+
+.flex-container>.one>img {
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.starit1 svg {
+    color: rgb(255, 230, 255);
+    cursor: pointer;
+}
+
+.strait {
+    display: flex;
+}
+
+.strait svg {
+    margin-left: 50px;
+    margin-top: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.flex-container>.one>.strait>h1 {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 26px;
+    padding-left: 15px;
+}
